@@ -1,0 +1,31 @@
+{
+    "mode": "run",
+    "exchange": "binance",
+    "login": {
+        "apiKey": "insert your key",
+        "secret": "insert your key"
+    },
+    "timeframe": "1m",
+    "tradingpair": "BTC/USDT",
+    "algorithmModule": "macd_talib",
+    "algorithmClassName": "Algorithm",
+    "run": {
+        "amount": 0.01,
+        "test": true,
+        "telegram": {
+            "enabled": false,
+            "token": "insert your key"
+        }
+    },
+    "fetchHistory": {
+        "since": 1606777200,
+        "filename": "history.csv"
+    },
+    "backtest": {
+        "fee": 0.075,
+        "filename": "history.csv"
+    },
+    "optimize": {
+        "withFees": false
+    }
+}
