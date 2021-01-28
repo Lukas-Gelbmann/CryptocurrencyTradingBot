@@ -205,7 +205,7 @@ class Framework:
                 plt.plot(backtest[2][0], backtest[2][1], 'go')
             i = i + 1
         plt.ylabel(base)
-        # plt.title("Backtest of " + self.module + " " + str(self.algorithm.get_standard_parameters(self.algorithm)))
+        plt.title("Backtest of " + self.module + " " + str(self.algorithm.get_standard_parameters(self.algorithm)))
         plt.gcf().autofmt_xdate()
         plt.legend(loc='upper left')
         plt.show()
