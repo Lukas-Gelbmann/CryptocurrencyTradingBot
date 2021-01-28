@@ -8,7 +8,7 @@ class Algorithm(AlgorithmInterface):
     SIGNALPERIOD = 9
 
     def get_possible_parameters(self):
-        return [[2, 16], [17, 40], [2, 16]]
+        return [[2, 16], [17, 60], [2, 16]]
 
     def get_standard_parameters(self):
         return [self.FASTPERIOD, self.SLOWPERIOD, self.SIGNALPERIOD]

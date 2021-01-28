@@ -1,31 +1,33 @@
 {
-    "mode": "run",
+    "mode": "showHistory",
+    "_possible_modes": [
+        "run",
+        "fetchHistory",
+        "showHistory",
+        "backtest",
+        "optimize"
+    ],
     "exchange": "binance",
     "login": {
-        "apiKey": "insert your key",
-        "secret": "insert your key"
+        "apiKey": "insert apiKey here",
+        "secret": "insert secret here"
     },
-    "timeframe": "1m",
-    "tradingpair": "BTC/USDT",
+    "timeframe": "1d",
+    "tradingpair": "ETH/BTC",
     "algorithmModule": "macd_talib",
     "algorithmClassName": "Algorithm",
+    "history": "history-1d-ethbtc-1-1-17-25-1-21.csv",
+    "fee": 0.075,
     "run": {
         "amount": 0.01,
         "test": true,
         "telegram": {
             "enabled": false,
-            "token": "insert your key"
+            "token": "insert token here"
         }
     },
     "fetchHistory": {
-        "since": 1606777200,
+        "since": 1483228800,
         "filename": "history.csv"
-    },
-    "backtest": {
-        "fee": 0.075,
-        "filename": "history.csv"
-    },
-    "optimize": {
-        "withFees": false
     }
 }
