@@ -1,5 +1,5 @@
 {
-    "mode": "showHistory",
+    "mode": "backtest",
     "_possible_modes": [
         "run",
         "fetchHistory",
@@ -14,7 +14,7 @@
     },
     "timeframe": "1d",
     "tradingpair": "ETH/BTC",
-    "algorithmModule": "macd_talib",
+    "algorithmModule": "rsimacd",
     "algorithmClassName": "Algorithm",
     "history": "history-1d-ethbtc-1-1-17-25-1-21.csv",
     "fee": 0.075,
